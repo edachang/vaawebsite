@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>BidBetter - Insights to GeBiz Tenders Test</title>
+        <title>BidBetter - Insights to GeBiz Tenders</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon1.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Overview</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Proposal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Project Details</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">App and User Guide</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     </ul>
@@ -48,7 +48,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Overview</h2>
-                    <h3 class="section-subheading text-muted">Welcome to our project website for ISSS608 Visual Analytics & Applications where we will be deriving insights into government procurement.</br></br>GeBIZ encompasses the public sector's request for quotations and tenders within the procurement procedure set out by Ministry of Finance. Records of Government Procurement via GeBIZ between 1 April 2016 and 31 March 2022 are available on data.gov.sg. In this project, we aim to categorise the products or services from the raw text provided by GeBIZ, thereby generating powerful insights on government procurement.</h3>
+                    <h3 class="section-subheading text-muted">Welcome to our project website for ISSS608 Visual Analytics & Applications where we will be deriving insights into government procurement.</br></br>GeBIZ encompasses the public sector's request for quotations and tenders within the procurement procedure set out by Ministry of Finance. Records of Government Procurement via GeBIZ between 1 April 2016 and 31 March 2022 are available on data.gov.sg. In this project, we aim to extract valuable insights on government procurement by categorizing the products or services from the raw text provided by GeBIZ.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -57,15 +57,24 @@
                             <i class="fas fa-flask fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Exploratory Data Analysis (EDA)</h4>
-                        <p class="text-muted">Here we used Pareto Charts to visualize total amount awarded on each category. Afterwards, we used wordcloud to identify related key words to each category.</p>
+                        <p class="text-muted">
+                            <ul>
+                                <li>Visualize the total amount awarded to each category using Pareto chart</li>
+                                <li>Identify related key words to each category using Wordcloud</li>
+                            </ul>
+                            </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-area-chart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Mean Analysis</h4>
-                        <p class="text-muted">Mean Analysis to check what is the Tender mean by categories?</p>
+                        <h4 class="my-3">Mean Comparison Analysis</h4>
+                        <p class="text-muted">
+                            <ul>
+                                <li>Use violin plot to compare the means across time</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -73,7 +82,12 @@
                             <i class="fas fa-exchange fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Network Graph</h4>
-                        <p class="text-muted">Finally, we do Network Analysis of the different ministries/agencies vs suppliers to investigate their connectivity and any strong links or bias.</p>
+                        <p class="text-muted">
+                            <ul>
+                                <li>Investigate the connectivity between different ministries/agencies and suppliers using network analysis</li>
+                                <li>Identify any strong links or biases</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -84,9 +98,9 @@
        <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Proposal</h2>
-                    <h3 class="section-subheading text-muted">Welcome to our project website for ISSS608 Visual Analytics & Applications where we will be deriving insights into government procurement.</br></br>GeBIZ encompasses the public sector's request for quotations and tenders within the procurement procedure set out by Ministry of Finance. Records of Government Procurement via GeBIZ between 1 April 2016 and 31 March 2022 are available on data.gov.sg. In this project, we aim to categorise the products or services from the raw text provided by GeBIZ, thereby generating powerful insights on government procurement.</h3>
-                    <object data="html.pdf" type="application/pdf"
+                    <h2 class="section-heading text-uppercase">Project Details</h2>
+                    <h3 class="section-subheading text-muted">We are pleased to present our proposal detailing our approach to categorizing the products and services listed on GeBIZ. This document outlines our team's understanding of the project's goals, our methodology, and the proposed visualizations to provide insights into government procurement. The following pages provide a comprehensive overview of our proposal and demonstrate our capability to deliver the desired outcomes.</h3>
+                    <object data="projectdetails.pdf" type="application/pdf"
                     title="PDF Book" width="100%" height="500px"></object>
                 </div>
                     </div>
@@ -105,7 +119,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <a class="portfolio-link" href="https://oliviaw.shinyapps.io/GroupProj/" target="_blank">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -177,30 +191,6 @@
             </div>
         </footer>
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Motivation</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Government Electronic Business (GeBIZ) is Singapore Government’s one-stop e-procurement portal, created to facilitate transparency in procurement requirements, procedure, and evaluation. Purchases can either be centralised (ministries and government agencies will then purchase off service-wide contracts) or decentralised. GeBIZ encompasses the public sector’s request for quotations and tenders within the procurement procedure, except where emergency procurement procedures apply:</br></br>Records of Government Procurement via GeBIZ between 1 April 2016 and 31 March 2022 are available on data.gov.sg. In this project, we aim to categorise the products or services from the raw text provided by GeBIZ, thereby generating powerful insights on government procurements. This treasure trove has not been widely explored or utilized (at least publicly) and through a R Shiny application, we seek to explore meaningful insights that can aide anyone looking into government procurements, be it the government agencies themselves, the suppliers keen on participating in government tenders, or even a member of the general public with an interest to see one facet of how tax dollars are spent.</p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -211,23 +201,13 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
+                                    <h2 class="text-uppercase">User Guide</h2>
+                                    <p class="item-intro text-muted">Please find the Shiny Apps User Guide as below.</p>
+                                    <object data="html.pdf" type="application/pdf" title="PDF Book" width="100%" height="500px"></object>
+                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Close User Guide
                                     </button>
                                 </div>
                             </div>
